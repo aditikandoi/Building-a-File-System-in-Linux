@@ -1,13 +1,3 @@
-## CSE-506 (Spring 2022) Homework Assignment #2
-
-NAME: Aditi Raj Kandoi
-
-SBU ID: 114395814
-
-EMAIL ID: akandoi@cs.stonybrook.edu
-
----
-
 ## Aim
 To become familiar with the VFS layer of Linux, and especially with extensible file systems APIs.  To build a useful file system using stacking technologies. 
 

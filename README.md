@@ -85,8 +85,6 @@ Several user level and kernel level headers are defined in stbfsctl.h and stbfs.
 ---
 
 #### I. EXTRA CREDIT- Secure Deletion
-Due to the 
-
 When files are just “unlinked”, their original data still remains on some disk blocks.  Hackers who gain access to the raw media can read all disk blocks, and if they identify blocks that originally belonged to the file, then they can recover some (or all) of the file.  Secure deletion is a method to overwrite data blocks before permanent deletion.
 
 Support a new ioctl called “secdel” that takes a named file F.  If such a file exists in the .stb folder, and the user owns the file, then “securely delete” it as follows: first you overwrite the file with all zeros, from the very first byte till the last byte, and only then y​​ou can unlink the file.  Don’t just truncate the file, b/c we want the data blocks to have been overwritten on disk before the name is linked from the file system.
